@@ -7,7 +7,7 @@ def qr_encode(option, opt_str, value, parser):
 	text=sys.argv[2]
 	img=QR(data=text,pixel_size=10)
 	img.encode()
- 	os.system("mv "+img.filename+"~/Desktop")
+ 	os.system("mv "+img.filename+" ~/Desktop")
  	print("File is saved in Desktop")
 
 
