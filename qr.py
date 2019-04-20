@@ -1,13 +1,14 @@
 from qrtools import QR
 import sys
 import os
-from optparse import OptionParser
+from optparse import OptionParser 
+import datetime
 
 def qr_encode(option, opt_str, value, parser):
 	text=sys.argv[2]
 	img=QR(data=text,pixel_size=10)
 	img.encode()
- 	os.system("mv "+img.filename+" ~/Desktop")
+ 	os.system("mv "+img.filename+" ~/Desktop/qr_"+datetime.datetime.now().strftime("%d%m%Y_%H%M%S")+".png")
  	print("File is saved in Desktop")
 
 
