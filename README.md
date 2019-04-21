@@ -25,5 +25,10 @@ pip install pypng
 pip install zbar
 pip install pillow
 
+
+PS: To decode image correctly, the image must be in png format. Make sure the background is white too.
+
+**************
 Developed by 
 d3m0nr007
+**************
